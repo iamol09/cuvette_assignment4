@@ -1,0 +1,84 @@
+body{
+    background-color: rgba(59, 70, 100, 1);
+    display: flex;
+    flex-direction: column;
+}
+.display{
+    width: 360px;
+    height: 85px;
+    border-radius: 12px;
+    background-color: rgba(24, 31, 50, 1);
+    color: rgba(255, 255, 255, 1);
+
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    padding-top: 10px;
+    /*typography*/
+    /*font-family: Segoe UI;*/
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.container{
+    width: 360px;
+    height: 290px;
+    border-radius: 12px;
+    background-color: rgba(37, 45, 68, 1);
+
+    position: absolute;
+    top: 46%;
+    left: 35%;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   /* grid-template-columns: repeat(4, 1fr);*/
+    margin: 18px;
+    grid-gap: 10px;
+   
+}
+
+button{
+    /*layout*/
+    width: 70px;
+    height: 40px;
+    top: 19px;
+    left: 282px;
+    border-radius: 12px;
+
+    /*typography*/
+    font-family: Inter;
+    color: rgba(59, 70, 100, 1);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+}
+
+#delete {
+    background-color: rgba(100, 114, 153, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 19px;
+}
+#reset {
+    background-color: rgba(100, 114, 153, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 150px;
+}
+#equals {
+    background-color: rgba(209, 63, 48, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 150px;
+}
